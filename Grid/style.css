@@ -1,0 +1,122 @@
+body{
+    background-color: #EEEEEE;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . . . ."
+      ". . profile_card profile_card . ."
+      ". . profile_card profile_card . ."
+      ". . profile_card profile_card . ."
+      ". . . . . ."
+      ". . . . . ."; 
+  }
+  
+
+.profile_card{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "fond fond fond fond fond"
+      ". . containe_profile . ."
+      ". liste_info liste_info liste_info ."
+      ". liste_info liste_info liste_info ."
+      "icones icones icones icones icones"; 
+    grid-area: profile_card; 
+    background-color: white;
+  }
+
+
+.fond {
+    grid-area: fond;
+
+}
+
+.fond img{
+    width: 100%;
+}
+
+.containe_profile {
+    grid-area: containe_profile;
+
+    }
+
+h1{
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.liste_info {
+     grid-area: liste_info;
+     list-style-type: none;
+     font-size: 25px;
+}
+
+
+
+.email{
+    
+    background-image: url("Images/enveloppe.png");
+    background-size: 15px 15px ;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 10px 25px ;
+
+}
+
+.telephone{
+    background-image: url("Images/telephone.png");
+    background-size: 15px 15px ;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 10px 25px ;
+}
+
+.globe{
+    background-image: url("Images/globe.png");
+    background-size: 15px 15px ;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 10px 25px ;
+}
+
+.ville{
+    background-image: url("Images/cartes-et-drapeaux.png");
+    background-size: 15px 15px ;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 10px 25px ;
+}
+
+
+.profile{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 0;
+    margin-top: -100px;
+  }
+
+  .icones {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "icone1 icone2 icone3 icone4"; 
+    grid-area: icones;
+    list-style-type: none;
+    
+  }
+
+  .icones li a img{
+    width:75%;
+  }
+
+
